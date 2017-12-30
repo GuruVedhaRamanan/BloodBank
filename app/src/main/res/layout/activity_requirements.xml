@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/my_beg"
+    tools:context="com.example.android.bloodbank20.Requirements">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height= "match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="9dp"
+                android:gravity="center"
+                android:text="Basic Requirements "
+                android:textColor="#000"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/point1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView4"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="19dp"
+                android:text="  * Be at  Good Health and Feel Well "
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/point2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/point1"
+                android:layout_below="@+id/point1"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="23dp"
+                android:text="* Be at least 17 years old"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/point3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/point1"
+                android:layout_below="@+id/point2"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="22dp"
+                android:text="* Be at least 50 kg"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/specilization"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/womenpoints"
+                android:layout_below="@+id/point3"
+                android:layout_marginEnd="50dp"
+                android:layout_marginTop="21dp"
+                android:text="For Power Red Donors"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/menpoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:text="If you are a Men"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/specilization"
+                android:layout_alignStart="@+id/textView5" />
+
+            <TextView
+                android:id="@+id/womenpoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/textView5"
+                android:layout_toEndOf="@+id/point3"
+                android:text="If you are a Women"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/textView7"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/textView5"
+                android:gravity="center"
+                android:text="* Minimum Weight  68 kg"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textSize="19dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/point3"
+                android:layout_below="@+id/menpoints"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="28dp"
+                android:gravity="center"
+                android:text="* Minimum Weight 58 kg"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/womenpoints"
+                android:gravity="center"
+                android:text="* Minimum Height 5'1 feet"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textView5"
+                android:layout_below="@+id/textView5"
+                android:layout_marginTop="42dp"
+                android:gravity="center"
+                android:text="* Minimum Height  5'5 feet"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/my_beg"
+    tools:context="com.example.android.bloodbank20.MessageActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:src="@drawable/alert"
+        android:id="@+id/imageView"
+        android:onClick="messagesshow"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentTop="true">
+
+    </ImageView>
+
+
+<TextView
+    android:layout_width="240dp"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:textColor="#f14444"
+    android:textSize="19sp"
+    android:onClick="messagesshow"
+    android:gravity="center"
+    android:text="Click here to see all the Requests"
+    android:id="@+id/textView12"
+    android:layout_toEndOf="@+id/imageView"
+    android:layout_marginTop="25dp" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Create  Request"
+    android:textSize="20sp"
+    android:id="@+id/textView8"
+    android:textColor="#000"
+    android:textStyle="bold"
+    android:layout_marginTop="26dp"
+    android:layout_below="@+id/imageView"
+    android:layout_centerHorizontal="true" />
+    <LinearLayout
+        android:id="@+id/mms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/textView8"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="(Enter your Name)" />
+
+
+        <EditText
+            android:id="@+id/contactnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="(Enter your phone number)"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/blood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="(Enter the Blood Group Needed)" />
+
+        <EditText
+            android:id="@+id/hospital"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="(Enter the hospital name and address)" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Warning : Don't Send Fake Messages"
+            android:textColor="#6b0b0b"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/sendss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/my_beg"
+            android:text="Send Request"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView11"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="19dp"
+            android:gravity="center"
+            android:text="@string/instruction"
+            android:textColor="#000" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+</LinearLayout>
+</ScrollView>
+

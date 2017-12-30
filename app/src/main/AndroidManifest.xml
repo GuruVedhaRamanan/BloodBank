@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.bloodbank20">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/gvrr"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".FirstScreenActivity" />
+        <activity android:name=".NewDonar" />
+        <activity android:name=".NeedDonar" />
+        <activity android:name=".MessageActivity" />
+        <activity android:name=".Requirements" />
+        <activity android:name=".Opositive" />
+        <activity android:name=".EmergerncyMessages" />
+        <activity android:name=".Onegative" />
+        <activity android:name=".Apositive" />
+        <activity android:name=".Anegative" />
+        <activity android:name=".Bnegative" />
+        <activity android:name=".Bpositive" />
+        <activity android:name=".ABpositive" />
+        <activity android:name=".ABnegative" />
+        <activity android:name=".ABPositives" />
+        <activity android:name=".ABPositivesss" />
+        <activity android:name=".PasswordActivity" />
+        <activity android:name=".Newpassword"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    tools:context="com.example.android.bloodbank20.NewDonar"
+    android:layout_height="match_parent"
+    android:background="@drawable/my_beg">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="567dp">
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:text="Blood donation is the real act of humanity. "
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView3"
+                android:layout_marginTop="33dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:ems="10"
+                    android:hint="(Enter Your Name)"
+                    android:inputType="textPersonName"
+                    android:textColorHint="#0A0909" />
+
+                <Spinner
+                    android:id="@+id/fields"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="21dp"
+                    android:entries="@array/Fields"
+                    android:popupBackground="@drawable/my_beg"
+                    android:soundEffectsEnabled="true"
+                    android:splitMotionEvents="true"
+                    android:theme="@style/AppTheme" />
+
+                <EditText
+                    android:id="@+id/RollNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="16dp"
+                    android:ems="10"
+                    android:hint="(Enter Your Identity Number)"
+                    android:textColorHint="#0A0909" />
+
+                <EditText
+                    android:id="@+id/PhoneNumber"
+                    android:layout_width="335dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="23dp"
+                    android:hint="(Enter Your Phone  Number)"
+                    android:inputType="phone"
+                    android:textColorHint="#0A0909" />
+
+                <EditText
+                    android:id="@+id/Address"
+                    android:layout_width="335dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="23dp"
+                    android:hint="(Enter Your Address)"
+                    android:textColorHint="#0A0909" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/savebutton"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="57dp"
+                android:textSize="16dp"
+                android:background="@drawable/my_beg"
+                android:text="Save your Details"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+   </ScrollView>

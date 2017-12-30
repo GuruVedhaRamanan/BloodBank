@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.bloodbank20.MainActivity"
+    android:background="@drawable/my_beg">
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/texts"
+       android:layout_marginStart="14dp"
+       android:textStyle="bold"
+       android:layout_marginBottom="60dp"
+       android:layout_alignBottom="@+id/usernumber"
+       android:layout_alignParentStart="true"
+       android:id="@+id/textView" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="121dp"
+        android:inputType="phone"
+        android:id="@+id/usernumber" />
+
+    <Button
+        android:id="@+id/SendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:onClick="Consent"
+        android:text="@string/codes"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter the Verification Code"
+        android:textStyle="bold"
+        android:id="@+id/textView1"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/textView" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:id="@+id/editText1"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/textView1"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:id="@+id/verif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verify"
+        android:onClick="verify"
+        android:layout_marginStart="66dp"
+        android:layout_alignBaseline="@+id/ResendButton"
+        android:layout_alignBottom="@+id/ResendButton"
+        android:layout_alignStart="@+id/textView" />
+
+    <Button
+        android:id="@+id/ResendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:onClick="resendbutton"
+        android:text="@string/code"
+        android:layout_below="@+id/editText1"
+        android:layout_toEndOf="@+id/SendButton" />
+
+
+</RelativeLayout>

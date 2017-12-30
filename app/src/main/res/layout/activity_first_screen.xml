@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:background="#F93B3B"
+    android:layout_width="match_parent"
+    tools:context="com.example.android.bloodbank20.FirstScreenActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="564dp">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dp"
+            android:gravity="center"
+            android:text="S.R.I.T - N.S.S"
+            android:textColor="#fff"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/textView9"
+            android:layout_marginTop="54dp"
+            android:layout_toStartOf="@+id/newdonar"
+            android:onClick="Newdonar"
+            android:src="@drawable/heart" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_images"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/profile_image"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="61dp"
+            android:onClick="Needdonar"
+            android:src="@drawable/gvrr" />
+
+
+        <TextView
+            android:id="@+id/needaDonar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/profile_images"
+            android:layout_marginBottom="32dp"
+            android:layout_toEndOf="@+id/profile_images"
+            android:onClick="Needdonar"
+            android:text="Need a Blood Donator"
+            android:textColor="#fff"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/newdonar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/profile_image"
+            android:layout_marginTop="32dp"
+            android:layout_toEndOf="@+id/profile_images"
+            android:onClick="Newdonar"
+            android:text="Join us to Donate Blood"
+            android:textColor="#fff"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="43dp"
+            android:gravity="center"
+            android:text="Connect with Internet"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView15"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:onClick="Requirements"
+            android:text="Requirements for blood donation"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+</LinearLayout>
+</ScrollView>
+

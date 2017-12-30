@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">BloodBank</string>
+    <string name="texts">Enter Your Mobile Number for Verification</string>
+    <string name="codes">SendCode</string>
+    <string name="code">ResendCode</string>
+    <string name="none">Not Yet Received any Donors in this Particular Group.</string>
+    <string name="instruction">Make Sure that you are Connected to Internet</string>
+    <string name="noemergency">No Emergency Messages</string>
+
+    <array name="Fields">
+
+        <item>"O+ve"</item>
+        <item>"O-ve"</item>
+        <item>"B+ve"</item>
+        <item>"B-ve</item>
+        <item>"A+ve"</item>
+        <item>"A-ve"</item>
+        <item>"AB+ve"</item>
+        <item>"AB-ve"</item>
+        <item>"A1B+ve</item>
+        <item>"A2B+ve"</item>
+
+
+    </array>
+</resources>
